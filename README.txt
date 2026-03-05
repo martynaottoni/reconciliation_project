@@ -11,7 +11,7 @@ At this stage it's important to talk about reconciliation stages:
 
 Step 1: 
 Data Collection
-I downloaded .csv file from Kaggle (https://www.kaggle.com/datasets/carrie1/ecommerce-data?resource=download) and in generate_noise.py file I generated copy of the following file, to simulate data from another providor, allowing me to run entire recocniliation process. 
+I downloaded .csv file from Kaggle (oms_orders_places.csv)(https://www.kaggle.com/datasets/carrie1/ecommerce-data?resource=download) and in generate_noise.py file I generated copy of the following file (wms_shipped_units.csv), to simulate data from another providor, allowing me to run entire recocniliation process.
 
 Step 2: Exploratory Data Analysis (EDA)
 In this step, before I'll move to Valdiation process, it's necessary understand the structure and characteristics of the datasets. The objective is to identify potential anomalies, inconsistencies, and structural differences between the files.
