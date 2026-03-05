@@ -15,3 +15,10 @@ def load_data(file_path):
     
 df_oms = load_data('oms_orders_placed.csv')
 df_wms = load_data('wms_shipped_units.csv')
+
+#Step 2: data validation
+
+print(f"---Validation Report: {name}-----")
+
+#nulls and gaps
+
