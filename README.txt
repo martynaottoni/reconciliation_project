@@ -34,4 +34,18 @@ This step include:
 - missing data verification - identifying gaps in the data and assessing whether they may affect the comparison process
 - data type verification and standatization - ensuring that variables representing the same information in both files use consistend data types
 - formatting standarization - detecting formatting inconsistencies, such as hidden spaces, inconsistent capitalization or irregular delimiters
-- duplicates detection - identifying duplicate records that could distort the comparison results.
+- duplicates detection - identifying duplicate records that could distort the comparison results. After that, duplicated records will be moved into separated files.
+
+Step 4: 
+Comparison
+Having standardized the data in the Validation phase, now we perform a direct "side-by-side" analysis to pinpoint exactly where the two systems diverge.
+
+This step includes:
+- Multi-level Matching: Using composite reconciliation key (`InvoiceNo` + `StockCode` + `Quantity`) to align records across both datasets at the most granular level.
+- Completeness Gap Analysis: Full Outer Join to identify orphan records:
+    - OMS-only records: transactions in OMS but missing in WMS (potential lost shipments)
+    - WMS-only records: transactions in WMS but missing in OMS (potential ghost records)
+- Numerical Variance Calculation: Quantifying differences in UnitPrice and other metrics for matched records.
+- Duplicate & Error Impact: Analyzing how flagged records (duplicates, invalid dates, missing prices) affect reconciliation results.
+- Financial Impact Assessment: Aggregating variances into total Net Variance showing financial exposure.
+- Root Cause Cross-Referencing: Linking discrepancies back to Validation flags to identify systematic issues.
