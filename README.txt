@@ -51,18 +51,16 @@ This step includes:
 - Root Cause Cross-Referencing: Linking discrepancies back to Validation flags to identify systematic issues.
 
 Step 5: Error Detection and Root Cause Analysis 
-After comparison identified discrepancies between OMS and WMS systems, the next critical step is understanding WHY these errors occurred and HOW to prioritize their resolution.
+After comparison identified discrepancies between OMS and WMS systems, the next critical step is understanding WHY these errors occurred and categorizing them by type and impact.
 
-This phase transforms raw discrepancy data into actionable business intelligence through systematic analysis of error patterns, root causes, and business impact.
+This phase transforms raw discrepancy data into structured analysis of error patterns and root causes through systematic investigation.
 
 Key activities include:
-- Error categorization by type and financial impact (High: missing prices £17,857 exposure, Medium: price modifications, Low: date corruption)
-- Root cause investigation for each error category (system integration failures, data transmission issues, migration problems)
-- Trend analysis across time periods, products, and customer segments to identify systematic vs. isolated issues
-- Business impact assessment including operational risks, compliance implications, and customer experience effects
-- Development of prioritization framework using impact vs. effort matrix to guide resolution efforts
-- Validation effectiveness review to identify gaps in current error detection processes
+- Error categorization by type and financial impact (Data Quality: £17,945 exposure, System Sync: 5,350 records, Business Logic: 983 records)
+- Root cause investigation for each error category (ETL failures, system migration issues, message queue problems)
+- Pattern analysis across products and customer segments to identify systematic vs. isolated issues
+- Validation effectiveness review to identify gaps in current error detection processes (90.1% detection rate achieved)
 
-The outcome is a comprehensive error profile that enables targeted remediation strategies and process improvements, ensuring the most critical issues are resolved first while building defenses against future data quality problems.
+The outcome is a comprehensive understanding of error causes and patterns that provides the foundation for the Resolution phase, where remediation strategies will be developed and prioritized.
 
-This step is essential because knowing that errors exist is only half the battle - understanding their causes and business impact is what enables effective resolution and prevention.
+This step is essential because knowing that errors exist is only half the battle - understanding their causes and detection effectiveness is what enables effective resolution planning.
