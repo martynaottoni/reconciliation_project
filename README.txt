@@ -49,3 +49,20 @@ This step includes:
 - Duplicate & Error Impact: Analyzing how flagged records (duplicates, invalid dates, missing prices) affect reconciliation results.
 - Financial Impact Assessment: Aggregating variances into total Net Variance showing financial exposure.
 - Root Cause Cross-Referencing: Linking discrepancies back to Validation flags to identify systematic issues.
+
+Step 5: Error Detection and Root Cause Analysis 
+After comparison identified discrepancies between OMS and WMS systems, the next critical step is understanding WHY these errors occurred and HOW to prioritize their resolution.
+
+This phase transforms raw discrepancy data into actionable business intelligence through systematic analysis of error patterns, root causes, and business impact.
+
+Key activities include:
+- Error categorization by type and financial impact (High: missing prices £17,857 exposure, Medium: price modifications, Low: date corruption)
+- Root cause investigation for each error category (system integration failures, data transmission issues, migration problems)
+- Trend analysis across time periods, products, and customer segments to identify systematic vs. isolated issues
+- Business impact assessment including operational risks, compliance implications, and customer experience effects
+- Development of prioritization framework using impact vs. effort matrix to guide resolution efforts
+- Validation effectiveness review to identify gaps in current error detection processes
+
+The outcome is a comprehensive error profile that enables targeted remediation strategies and process improvements, ensuring the most critical issues are resolved first while building defenses against future data quality problems.
+
+This step is essential because knowing that errors exist is only half the battle - understanding their causes and business impact is what enables effective resolution and prevention.
